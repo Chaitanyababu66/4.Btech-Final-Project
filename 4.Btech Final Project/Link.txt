@@ -1,0 +1,9 @@
+https://www.kaggle.com/amanneo/diabetic-retinopathy-resized-arranged?select=1
+
+
+The folder represents specific class labels.
+0 - No DR
+1 - Mild
+2 - Moderate
+3 - Severe
+4 - Proliferative DR

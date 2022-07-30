@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetic Retinopathy</title>
+</head>
+<style>
+    label
+    {
+        font-size: 20px;
+        color:red;
+        font-family:  Algerian;
+    }
+    body
+    {
+        margin:0;
+        padding:0;
+        background: url(../static/image/1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        min-height: 100vh;
+    }
+    button
+    {
+        font-size: 20px;
+        font-family:  wide latin;
+        color:black;
+        background-color: green;
+        box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+    }
+    #ss
+    {
+        font-size: 20px;
+        color:#20fc03;
+        background-color: black;
+        font-family:  Times new roman;
+    }
+    .blink_me {
+        animation: blinker 2s linear infinite;
+    }
+
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+    }
+    h2
+    {
+        background-color: #101010;
+        font-family: Algerian;
+        font-size: 33px;
+        letter-spacing: 3px;
+        color:#56ff00;
+        padding:20px;
+    }
+
+    h1,h3
+    {
+        font-family: Algerian;
+        font-size: 33px;
+        letter-spacing: 3px;
+        color:black;
+    }
+    a
+    {
+        margin-left:44%;
+        font-weight:500;
+        font-size: 20px;
+        color:purple  ;
+        font-family:  Times new roman;
+        text-decoration: none;
+        background-color:rgb(0,0,0,0.8);
+        padding:20px;
+        color:white;
+        border-radius:3px;
+    }
+    a:hover{
+        color:white;
+        background-color: rgb(0,0,0,0.7);
+    }
+</style>
+<body>
+<center><h2 class="blink_me">Detection of Blindness (Diabetic Retinopathy) on Retina Images of the Eye</h2></center><br><br><br><br>
+ <marquee direction="down"><center><b><h1>{{out}}</h1></b></center></marquee><br><br><br><br><br>
+<h3><a href="{% url 'home' %}">Go Back!!!</a></h3>
+</body>
+</html>
